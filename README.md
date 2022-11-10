@@ -4,10 +4,6 @@
 
 We have created a great database with teams, players, stats and more!
 
-1. Download the file fifa_2023.db
-2. All information is in there so tell us what you want to know
-
-
 ## Installation
 
 1. Download the file fifa_2023.db
@@ -15,4 +11,4 @@ We have created a great database with teams, players, stats and more!
 
 ## Thank you
 
-<img src="https://media.giphy.com/media/9zW1YG6TEw7R55lbFb/giphy.gif">
+<img src="https://images.app.goo.gl/MoyyrLXkMYXtDFXT7">
