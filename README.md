@@ -10,5 +10,3 @@ We have created a great database with teams, players, stats and more!
 2. All information is in there so tell us what you want to know
 
 ## Thank you
-
-<img src="https://images.app.goo.gl/MoyyrLXkMYXtDFXT7">
