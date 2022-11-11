@@ -6,7 +6,7 @@ We have created a great database with teams, players, stats and more!
 
 Querys:
 
-// List all games today 
+## // List all games today 
 SELECT * 
 FROM matches 
 WHERE date = "2023-07-26";
