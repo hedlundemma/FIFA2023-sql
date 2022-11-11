@@ -6,17 +6,17 @@ We have created a great database with teams, players, stats and more!
 
 Querys:
 
-## // List all games today 
+##  List all games today 
 SELECT * 
 FROM matches 
 WHERE date = "2023-07-26";
 
-//List a teams matches and results
+##List a teams matches and results
 SELECT * 
 FROM matches 
 WHERE home_team = 1 OR away_team=1;
 
-//List a group table 
+##List a group table 
 SELECT * 
 FROM teams 
 WHERE tournament_group = "A";
@@ -30,7 +30,7 @@ WHERE "event" = "goal"
 
 LIMIT 10
 
-// List the top 10 players assist
+##List the top 10 players assist
 SELECT * FROM players
 
 INNER JOIN stats ON stats.player_id = players.id
@@ -40,14 +40,14 @@ WHERE "event" = "assist"
 LIMIT 10
 
 
-//Players that are unavailable due to disciplinary reasons
+##Players that are unavailable due to disciplinary reasons
 SELECT * 
 FROM stats 
 WHERE event = "red card" OR event = "yellow card"
 
 ORDER BY event;
 
-// List a teams roster 
+##List a teams roster 
 SELECT "name", 
 players.first_name as player_f_name, 
 players.last_name as player_l_name, 
@@ -71,7 +71,7 @@ LEFT JOIN shots ON shots.player_id = players.id
 
 WHERE teams.id = 1;
 
-// Detailed info about a finished game
+##Detailed info about a finished game
 SELECT team_id, 
 home_team, 
 away_team,
@@ -91,7 +91,7 @@ INNER JOIN players ON matches.home_team = players.team_id OR matches.away_team =
 
 INNER JOIN venues ON matches.venue_id = venues.id
 
-//Short info for the same game as above
+##Short info for the same game as above
 SELECT "name", 
 abbrevation, 
 "flag", 
@@ -103,7 +103,7 @@ FROM teams
 
 WHERE id IN (1,2);
 
-// Playoff-tree 
+##Playoff-tree 
 SELECT name, 
 teams.id AS team_id, 
 home_team, 
